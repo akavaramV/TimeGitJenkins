@@ -54,7 +54,7 @@ public class Time
 		//we will eventually multiply the hours by 3600 + the minutes by 60 + the seconds
 		int minutes = getTotalMinutes (time);
 		int seconds = getSeconds(time);
-		return hours *  3600000 + minutes * 60000 + seconds * 1000;
+		return hours *  3600 + minutes * 60 + seconds;
 	}
 
 	public static int getTotalMilliseconds(String time)throws NumberFormatException, StringIndexOutOfBoundsException {
